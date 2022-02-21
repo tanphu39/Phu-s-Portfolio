@@ -1,0 +1,417 @@
+@font-face {
+  font-family: Poppins;
+  src: url("./font/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: PoppinsBold;
+  src: url("./font/Poppins-Bold.ttf");
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Poppins;
+  margin: 0;
+}
+
+.nav {
+  position: fixed;
+  height: 7%;
+  left: 0px;
+  top: 0px;
+  z-index: 10;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.navLogo {
+  margin: 0 0 0 10%;
+}
+
+.navButtons {
+  width: 100%;
+  margin: 0 10% 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.navButtons > button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: Poppins;
+  -webkit-text-decoration: underline 3px white;
+          text-decoration: underline 3px white;
+  text-decoration-skip-ink: none;
+  text-underline-offset: 35%;
+  -webkit-transition: -webkit-text-decoration 0.15s;
+  transition: -webkit-text-decoration 0.15s;
+  transition: text-decoration 0.15s;
+  transition: text-decoration 0.15s, -webkit-text-decoration 0.15s;
+}
+
+.navButtons > button:hover {
+  -webkit-text-decoration: underline 3px #09B9AF;
+          text-decoration: underline 3px #09B9AF;
+  text-decoration-skip-ink: none;
+  text-underline-offset: 35%;
+}
+
+.navContact {
+  margin: 0 0 0 5%;
+}
+
+.content {
+  margin: 7% 0 0 0;
+}
+
+section {
+  margin: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section > h1 {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.skill {
+  margin: 3% 0 8% 0;
+}
+
+.skillTitle {
+  margin: 5% 0 1% 5%;
+}
+
+.welcomeAva {
+  width: 30rem;
+  height: auto;
+}
+
+.welcomeInfo {
+  width: 50%;
+  margin: 0 5% 0 0;
+}
+
+.welcomeTitle {
+  font-weight: normal;
+  font-size: 2rem;
+  margin: 0;
+}
+
+.welcomeTitlePortfolio {
+  font-weight: normal;
+  margin: 0;
+  font-size: 2rem;
+  text-align: right;
+}
+
+.welcomeTitleName {
+  font-weight: bold;
+  font-size: 5rem;
+  -webkit-text-decoration: underline 11px #00A097;
+          text-decoration: underline 11px #00A097;
+  text-decoration-skip-ink: none;
+  text-underline-offset: -19%;
+}
+
+.welcomeDes {
+  text-align: justify;
+  font-size: 1.2rem;
+  line-height: 2.3rem;
+  margin: 3rem 0 0 0;
+}
+
+.welcomeFlex, .aboutMeFlex {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contactFlex {
+  width: 90%;
+  height: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.aboutMeTitle {
+  -webkit-text-decoration: underline 6.5px #FA8769;
+          text-decoration: underline 6.5px #FA8769;
+  text-decoration-skip-ink: none;
+  text-underline-offset: -38%;
+}
+
+.workTitle {
+  -webkit-text-decoration: underline 6.5px #829EFE;
+          text-decoration: underline 6.5px #829EFE;
+  text-decoration-skip-ink: none;
+  text-underline-offset: -38%;
+  margin: 5%;
+}
+
+.skillTitle {
+  -webkit-text-decoration: underline 6.5px #09B9AF;
+          text-decoration: underline 6.5px #09B9AF;
+  text-decoration-skip-ink: none;
+  text-underline-offset: -38%;
+}
+
+.skillFlex {
+  width: 100%;
+  height: auto;
+}
+
+.aboutMeDes {
+  letter-spacing: 2px;
+  line-height: 3rem;
+}
+
+.contact {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background: #E1EAE7;
+}
+
+.contactSocial, .contactContact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+  width: 25rem;
+}
+
+.work {
+  margin: 0;
+}
+
+.workPrj {
+  width: 100%;
+  height: 40rem;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.prjDes {
+  width: 40rem;
+}
+
+.prjDes > p {
+  letter-spacing: 3px;
+  line-height: 1.7rem;
+}
+
+.prjDes > h1 {
+  letter-spacing: 8px;
+  line-height: 1.7rem;
+}
+
+.firstPrj {
+  background: #DF824D;
+  color: white;
+}
+
+.secondPrj {
+  background: #00726B;
+  color: white;
+}
+
+.thirdPrj {
+  background: #EDB62E;
+  color: white;
+}
+
+.fourthPrj {
+  background: #46B5E2;
+  color: white;
+}
+
+.fifthPrj {
+  background: #FF9478;
+  color: white;
+}
+
+.sixthPrj {
+  background: #FFCC8D;
+  color: white;
+}
+
+.prjImg {
+  width: 40rem;
+  height: auto;
+}
+
+.sixthPrjImg {
+  height: 32rem;
+  width: auto;
+}
+
+.leftButton, .rightButton {
+  border: solid 2px white;
+  cursor: pointer;
+  background: transparent;
+  color: white;
+  font-family: Poppins;
+  padding: 0.5rem;
+  letter-spacing: 2px;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.leftButton:hover, .rightButton:hover {
+  background: white;
+  color: black;
+}
+
+.phone {
+  margin: 0 6% 0 0;
+}
+
+a > svg {
+  cursor: pointer;
+}
+
+.feelFree {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  font-size: 1.3rem;
+  -webkit-text-decoration: underline 7px #FA8769;
+          text-decoration: underline 7px #FA8769;
+  text-decoration-skip-ink: none;
+  text-underline-offset: -30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.goToTop {
+  margin: 6% 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.goToTopButton {
+  border: none;
+  color: black;
+  background: transparent;
+  font-family: Poppins;
+  font-size: 1.7rem;
+  font-weight: bold;
+  -webkit-text-decoration: underline 7px #00A097;
+          text-decoration: underline 7px #00A097;
+  text-decoration-skip-ink: none;
+  text-underline-offset: -35%;
+  cursor: pointer;
+}
+
+#container {
+  height: 60px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.photobanner {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+  white-space: nowrap;
+  -webkit-animation: bannermove 20s linear infinite;
+          animation: bannermove 20s linear infinite;
+}
+
+.photobanner svg {
+  margin: 0 2.1em;
+  height: 60px;
+  width: auto;
+}
+
+@-webkit-keyframes bannermove {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+  }
+}
+
+@keyframes bannermove {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+  }
+}
+/*# sourceMappingURL=style.css.map */
