@@ -240,8 +240,9 @@ section > h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -257,8 +258,17 @@ section > h1 {
 }
 
 .prjDes > h1 {
-  letter-spacing: 8px;
-  line-height: 1.7rem;
+  font-size: 1.9rem;
+  letter-spacing: 10px;
+  line-height: 2rem;
+}
+
+.prjDesRight {
+  margin: 0 5rem 0 0;
+}
+
+.prjDesLeft {
+  margin: 0 0 0 5rem;
 }
 
 .firstPrj {
@@ -292,13 +302,23 @@ section > h1 {
 }
 
 .prjImg {
-  width: 40rem;
-  height: auto;
+  position: relative;
+  overflow: hidden;
+  height: 40rem;
+  width: auto;
 }
 
-.sixthPrjImg {
-  height: 32rem;
-  width: auto;
+.prjImgContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .leftButton, .rightButton {

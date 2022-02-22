@@ -194,7 +194,7 @@ section > h1{
     height: 40rem;
     margin: 0;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -205,9 +205,18 @@ section > h1{
         line-height: 1.7rem;
     }
     &>h1 {
-        letter-spacing: 8px;
-        line-height: 1.7rem;
+        font-size: 1.9rem;
+        letter-spacing: 10px;
+        line-height: 2rem;
     }
+}
+
+.prjDesRight {
+    margin: 0 5rem 0 0;
+}
+
+.prjDesLeft {
+    margin: 0 0 0 5rem;
 }
 
 .firstPrj {
@@ -241,20 +250,18 @@ section > h1{
 }
 
 .prjImg {
-    width: 40rem;
-    height: auto;
-}
-
-.sixthPrjImg {
-    height: 32rem;
+    position: relative;
+    overflow: hidden;
+    height: 40rem;
     width: auto;
 }
 
-// .prjImgContainer {
-//     width: 50rem;
-//     height: 40rem;
-//     background: #F5F5F5;
-// }
+.prjImgContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
 
 .leftButton, .rightButton {
     border: solid 2px white;

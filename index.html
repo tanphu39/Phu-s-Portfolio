@@ -15,8 +15,8 @@
                 </svg>                    
             </div>
             <div class="navButtons">
-                <button class="navWork">My Work</button>
-                <button class="navContact">Contact</button>
+                <button class="navWork" onclick="document.getElementById('myWork').scrollIntoView();">My Work</button>
+                <button class="navContact" onclick="document.getElementById('contact').scrollIntoView();">Contact</button>
             </div>
         </div>
 
@@ -40,13 +40,13 @@
                     <p class="aboutMeDes">I work as a web developer. I have a strong ability in math and logic, and that's why I fell in love with coding. I am currently a front-end developer with my most fluent template being React. However, my main goal is to develop as a full-stack developer in the future.</p>
                 </div>
             </section>
-            <section class="work">
+            <section class="work" id="myWork">
                 <h1 class="workTitle">MY WORK</h1>
                 <div class="workPrj firstPrj">
                     <div class="prjImgContainer">
-                        <img src="./img/prj1.jpg" alt="Prj1" class="firstPrjImg prjImg">
+                        <img src="./img/prj1-mockup.jpg" alt="Prj1" class="firstPrjImg prjImg">
                     </div>
-                    <div class="prjDes">
+                    <div class="prjDes prjDesRight">
                         <h1>E-Commerce Website</h1>
                         <p>This is my completed React project. I rebuilt the project layout from an example picture online then add functionality to it, or in this case is the cart. Here I use React with TypeScript template, along with React Router to render multiple pages and SCSS to better program the CSS modules.</p>
                         <a href="url" target="_blank">
@@ -55,22 +55,22 @@
                     </div>
                 </div>
                 <div class="workPrj secondPrj">
-                    <div class="prjDes">
+                    <div class="prjDes prjDesLeft">
                         <h1>Portfolio Website</h1>
                         <p>The project is the website you're viewing here. In the website I use HTML, SCSS and along with some JavaScript. The layout was designed by a friend of mine from Figma.</p>
-                        <a href="url" target="_blank">
+                        <a href="https://tanphu39.github.io/Phu-s-Portfolio/" target="_blank">
                             <button class="leftButton">View page</button>
                         </a>
                     </div>
                     <div class="prjImgContainer">
-                        <img src="./img/prj2.jpg" alt="Prj1" class="secondPrjImg prjImg">
+                        <img src="./img/prj2-mockup.jpg" alt="Prj1" class="secondPrjImg prjImg">
                     </div>
                 </div>
                 <div class="workPrj thirdPrj">
                     <div class="prjImgContainer">
-                        <img src="./img/prj3.jpg" alt="Prj1" class="thirdPrjImg prjImg">
+                        <img src="./img/prj3-mockup.jpg" alt="Prj1" class="thirdPrjImg prjImg">
                     </div>
-                    <div class="prjDes">
+                    <div class="prjDes prjDesRight">
                         <h1>Portfolio Website</h1>
                         <p>The website is a portfolio from a friend of mine. The idea and layout behind was designed by him. I built this website using HTML, CSS and JavaScript for some functionality.</p>
                         <a href="https://tanphu39.github.io/Nam-s-Portfolio/" target="_blank">
@@ -79,7 +79,7 @@
                     </div>
                 </div>
                 <div class="workPrj fourthPrj">
-                    <div class="prjDes">
+                    <div class="prjDes prjDesLeft">
                         <h1>Random Answer Generator Website</h1>
                         <p>Have you ever have some burning question that you seek for guidance? Well I've built a website for it. Using HTML, CSS and JavaScript, I built a website that would randomly generate answers to your yes/no questions.</p>
                         <a href="https://tanphu39.github.io/The-fault-in-our-stars/" target="_blank">
@@ -87,14 +87,14 @@
                         </a>
                     </div>
                     <div class="prjImgContainer">
-                        <img src="./img/prj4.jpg" alt="Prj1" class="fourthPrjImg prjImg">
+                        <img src="./img/prj4-mockup.jpg" alt="Prj1" class="fourthPrjImg prjImg">
                     </div>
                 </div>
                 <div class="workPrj fifthPrj">
                     <div class="prjImgContainer">
-                        <img src="./img/prj5.jpg" alt="Prj1" class="fifthPrjImg prjImg">
+                        <img src="./img/prj5-mockup.jpg" alt="Prj1" class="fifthPrjImg prjImg">
                     </div>
-                    <div class="prjDes">
+                    <div class="prjDes prjDesRight">
                         <h1>Personal Blog Page</h1>
                         <p>My very first website. It's very uncomplicated, using only HTML and CSS. This is where I first practice building web layout. It was also designed by one of my friends.</p>
                         <a href="https://tanphu39.github.io/Nam-s-minimalist-webpage/" target="_blank">
@@ -103,7 +103,7 @@
                     </div>
                 </div>
                 <div class="workPrj sixthPrj">
-                    <div class="prjDes">
+                    <div class="prjDes prjDesLeft">
                         <h1>Other Projects</h1>
                         <p>When I began to learn about programming, I first made two unity games for Android using C#. They are Over and Hear or See. However, my laptop was malfunctioned during the second one's development, thus I've lost all the files to those projects. The page is only a simple fanpage I made that's still remained.</p>
                         <a href="https://www.facebook.com/Over-178967733036211/" target="_blank">
@@ -111,7 +111,7 @@
                         </a>
                     </div>
                     <div class="prjImgContainer">
-                        <img src="./img/prj6.jpg" alt="Prj1" class="sixthPrjImg prjImg">
+                        <img src="./img/prj6-mockup.jpg" alt="Prj1" class="sixthPrjImg prjImg">
                     </div>
                 </div>
             </section>
@@ -291,9 +291,9 @@
                 </div>
             </section>
             <div class="goToTop">
-                <button class="goToTopButton">GO BACK TOP</button>
+                <button class="goToTopButton" onclick="window.scrollTo(0, 0);">GO BACK TOP</button>
             </div>
-            <section class="contact">
+            <section class="contact" id="contact">
                 <div class="feelFree">
                     <h1>Feel free to contact me for work!</h1>
                 </div>
